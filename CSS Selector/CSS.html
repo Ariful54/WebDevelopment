@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /*element Selector*/
+p {  
+    color: rgb(221, 31, 31);
+    font-size: 20px;
+}
+    /*Class selector */
+.highlight{ 
+    color: coral
+}
+p.text-center{
+    text-align: center;  
+}
+   /*id selector*/
+#id{
+    padding: 0px;
+    color: rgb(0, 255, 98);
+}
+/*Descendant selector  */
+.dec a { 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+ /*Universal selector*/
+ * {
+  background-color: rgb(254, 255, 254);
+}
+/* DRY */
+h1,h2,h3{
+    background-color: rgb(40, 175, 175);
+ }
+
+/*Child selector(>) */
+div > b {
+  background-color: rgb(250, 246, 24);
+}
+/*Adjacent Sibling Selector(+)  */
+h1 + p {
+    border: 5px dotted rgb(219, 25, 25);
+}
+/*General Sibling Selector(~)  */
+h1 ~ p {
+    border: 5px dotted rgb(219, 25, 25);
+}
+</style>
+</head>
+<body>
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+<p class="highlight text-center" >This is a paragraph 2.</p>
+<p id='id'>This is a paragraph 3</p>
+
+<!--Descendant selector -->
+<div class="dec">
+    <div class="dec-child">
+        W3School Document<a href="https://www.w3schools.com/css/css_combinators.asp">Link1_Decendant</a> 
+    </div>
+</div>
+
+<!--DRY -->
+<h1>My First CSS Example</h1>
+<h2>My First CSS Example</h2>
+<h3>My First CSS Example</h3>
+<!--Child selector -->
+<div>
+    <b>Paragraph 1 in the div.</b>
+    <section>
+      <!-- not Child but Descendant -->
+      <b>Paragraph 2 in the div (inside a section element).</b>
+    </section>
+    <b>Paragraph 3 in the div.</b>
+</div>
+<!--Adjacent Sibling Selector -->
+<p>Paragraph</p>
+<h1>Heading</h1>
+<p>Paragraph2</p>
+
+
+</body>
+</html>

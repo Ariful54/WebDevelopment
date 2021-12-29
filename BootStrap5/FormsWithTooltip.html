@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>My first Form </h2>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="name" class="form-label">Name:</label>
+                        <div class=" input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="arif" />
+                            <!-- Tooltip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter your name!">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="email" class="form-label">Email Address:</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="email" class="form-control" placeholder="arif@example.com" />
+                        </div>
+                        
+                        <label for="subject" class="form-label">Your question?</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing query</option>
+                                <option value="other">Others</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" id="query" style="height: 130px" placeholder="Your query.."></textarea>
+                            <label for="query">Your query...</label>
+                        </div> <br>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+          new bootstrap.Tooltip(t)
+        })
+      </script> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> CSS Grid</title>
+    <style>
+        body{margin: 0;font-family: 'Times New Roman'; }
+    
+        .container { /*Grid */
+          background: #eee;
+          display: grid;
+		  grid-template-columns:repeat(3,1fr);
+		  /* grid-auto-rows: minmax(100px,auto) ; */
+          grid-template-rows: minmax(100px,auto);
+		  grid-gap: 10px ;
+          /* align-items: end; 
+          justify-items: end; */
+		 }
+         
+        .grid-item {
+            color: rgb(255, 255, 255);
+            
+    } 
+    .item-1 {background-color: #FAA094FF;grid-column: 1/4;grid-row: 1/2;}
+    .item-2 {background-color: #9ed9ccff;
+        justify-self: start;
+        align-self: start;}
+    .item-3 {background-color: #9ed9ccff;
+        justify-self: center;
+        align-self: center;}
+    .item-4 {background-color: #008c76ff;
+        justify-self: end;
+        align-self: end;}
+    .item-5 {background-color: #B4BF35;}
+    .item-6 {background-color: #B95F21;}
+    .item-7 {background-color: #1C4C56;}
+    .item-8 {background-color: #CfB276;}
+    .item-9 {background-color: #18c56f;
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        .item-9 > div{
+            color: wheat;
+           
+        }
+        .nested {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+           
+            margin: 0;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item item-1 ">Item 1 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam officia earum odit, quos esse fuga enim necessitatibus, aspernatur est maiores distinctio sunt voluptates inventore magni commodi. Voluptas, cum et?</div>
+        <div class="grid-item item-2">Item 2</div>
+        <div class="grid-item item-3">Item 3</div>
+        <div class="grid-item item-4">Item 4</div> 
+        <div class="grid-item item-5">Item 5</div> 
+        <div class="grid-item item-6">Item 6</div>
+        <div class="grid-item item-7">Item 7</div>
+        <div class="grid-item item-8 nested">
+            <p> s</p>
+            <p> s</p>
+            <p> s</p>
+        </div>
+        <div class="grid-item item-9 nested">
+            <div class="subitems1">A</div>
+            <div class="subitems2">B</div>
+            <div class="subitems3">C</div>
+            <div class="subitems4">D</div>
+        </div>    
+
+</body>
+</html>

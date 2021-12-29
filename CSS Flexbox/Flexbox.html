@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> CSS Flexbox</title>
+    <style>
+        body{margin: 0;font-family: 'Times New Roman'; }
+    
+        .container { /* Flex Entity  width: 200px;*/
+          border: 3px solid red;
+          /* height: 800px; */
+          display: flex; /* Flex Display Properties Flex=Blocklavel*/ 
+           /* flex-direction: column; ByDeafult Left to right/Row */
+          flex-wrap: wrap; 
+         /*flex-flow: wrap; /* Combination of Direction and wrap flex Properties*/
+         /* justify-content: space-around; */
+         /* align-items: flex-start; /*ByDefault it is stratch*/
+      /* align-content: center;/*Aligns lines of content
+            along the cross axis and distribute
+            any extra spacing in the parent container*/
+ 
+
+        }
+        .flex-item {
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+            width:50%;
+            /* margin: 5px;
+            padding: 10px;  */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1;  */
+            /* flex: 0 1 200px; */
+   
+    }
+    .item-1 {background-color: #B4BF35; }
+    .item-2 {background-color: #438b67;}
+    .item-3 {background-color: #9ed9ccff; }
+    .item-4 {background-color: #008c76ff;}
+    .item-5 {background-color: #B4BF35;}
+    .item-6 {background-color: #B95F21;}
+    .item-7 {background-color: #1C4C56;}
+    .item-8 {background-color: #CfB276;}
+    .item-9 {background-color: #438b67;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item item-1">Item 1 Flex Item </div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div> 
+        <div class="flex-item item-5">Item 5</div> 
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div>
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>    
+
+</body>
+</html>

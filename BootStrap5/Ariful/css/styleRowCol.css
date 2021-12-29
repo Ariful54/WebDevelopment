@@ -1,0 +1,27 @@
+.container{
+    border: 9px solid black;
+}
+.row-3{
+    border: 5px solid red;
+}
+.col-7{
+    border: 5px solid green;
+    overflow: hidden;
+}
+.col-3{
+    border: 5px solid green;
+    overflow: hidden;
+}
+.col-5{
+    border: 5px solid green;
+    overflow: hidden;
+}
+.col{
+    border: 5px solid green;
+    overflow: hidden;
+}
+
+.col-lg{
+    border: 5px solid rgb(128, 126, 0);
+    overflow: hidden;
+}
